@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>mega import</title>
+    </head>
+    <body>
+    <h2>info imported</h2>
+    <p id ="display"></p>
+    
+    
+<script>
+
+
+let info1 = localStorage.getItem("email");
+    let info2 = localStorage.getItem("password");
+    if (info1 && info2) {
+      document.getElementById("display").innerText = 
+        "Email: " + info1 + "\nPassword: " + info2;
+    } else {
+      document.getElementById("display").innerText = "No input received yet.";
+    }
+ // console.log("email = " + info01);
+ // console.log("password = " + info2);
+  </script>
+  </body>
+  </html>
